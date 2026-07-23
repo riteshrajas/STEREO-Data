@@ -1,0 +1,10 @@
+# Ignore massive NASA CDF files
+*.cdf
+
+# Python caches
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
