@@ -1,0 +1,94 @@
+01_multipanel_timeseries.png
+  Description: Multi-panel time series of BTOTAL, Np, Vp, Tp, Beta for all 5 events overlaid.
+  Shows the overall state of magnetic field and plasma during each event window.
+
+02_bfield_rtn_<date>.png (one per event)
+  Description: Time series of the 3 magnetic field RTN components (R, T, N) along with |B|.
+  Smooth rotations of B_T/B_N are a signature of magnetic flux rope passage.
+
+03_scatter_np_vp_<date>.png (one per event)
+  Description: Scatter of Np vs Vp colored by time progression, with linear regression line.
+  In quiet solar wind there is an inverse Np-Vp correlation; ICMEs disrupt it.
+
+04_histograms_all.png
+  Description: Probability density histograms for 8 key variables across all events overlaid.
+  Useful for spotting bimodality (two solar wind streams) and skewness.
+
+05_corr_heatmap_<date>.png (one per event)
+  Description: Pearson correlation matrix. Red=positive correlation, Blue=negative.
+  Key pairs: |B|--Beta (anti); Vp--Tp (positive); Np--Np-derived variables.
+
+06_boxplots.png
+  Description: Box plots of 8 variables per event. Compare median, IQR, outliers.
+  Identifies which event had the most extreme values.
+
+06b_violinplots.png
+  Description: Same as box plots but using a KDE width — reveals bimodality and heavy tails
+  that box plots might hide.
+
+07_hee_trajectory.png
+  Description: 2D spacecraft position in HEE X-Y coordinates (Sun at origin).
+  Compares the 1 AU reference orbit with STEREO-A's trajectory.
+
+08_distance_r.png
+  Description: Heliocentric distance R over each event. STEREO-A is near 1 AU.
+  Small orbital arcs are visible; relevant for plasma interpretation.
+
+09_pressures_<date>.png (one per event)
+  Description: Stacked area of magnetic + dynamic pressure, with total overlaid.
+  When magnetic pressure dominates, you are likely inside a magnetic cloud.
+
+10_angles_<date>.png (one per event)
+  Description: Cone angle (0-180) and Clock angle (-180 to +180) scatter plots colored by |B|.
+  Smooth rotations suggest flux-rope signature.
+
+11_kde_vp_tp_<date>.png (one per event)
+  Description: Joint 2D KDE estimate of Vp vs Tp with linear fit.
+  Reveals the main "cloud" of solar wind state in (Vp, Tp) space.
+
+12_velocity_polar_<date>.png (one per event)
+  Description: Polar scatter in the transverse velocity plane (Vt, Vn). Color=Vr/V.
+  Radial flow should cluster with Vr/V near 1.
+
+13_beta_vs_btotal_<date>.png (one per event)
+  Description: Beta vs |B| (log) colored by Tp. Low-Beta + high-|B| = magnetic cloud (MC) regime.
+
+14_velocity_cosines_<date>.png (one per event)
+  Description: Time series of Vr/V, Vt/V, Vn/V. Deviations from Vr/V=1 indicate deflected flow
+  at CME shocks/sheaths.
+
+15_pairplot_<date>.png (one per event)
+  Description: Pairwise scatter + KDE for BTOTAL/Np/Vp/Tp/Beta. Off-diagonal = joint structure,
+  diagonal = marginal distribution.
+
+16_vp_smoothed_<date>.png (one per event)
+  Description: Raw vs 1-hour rolling-mean Vp. Highlights HSS regions (Vp > 400 km/s).
+
+17_entropy_beta_<date>.png (one per event)
+  Description: Dual-axis time series of Entropy and Beta. Anti-correlation typical of
+  hot low-density wind.
+
+18_bfield_3d_<date>.png (one per event)
+  Description: 3D scatter of B_R/B_T/B_N colored by |B|. A helical organization = flux rope.
+
+19_autocorrelation_<date>.png (one per event)
+  Description: ACF of 5 key variables. Long decay = coherent structure; rapid decay = turbulence.
+
+20_pressure_comparison.png
+  Description: Box plots comparing magnetic, dynamic, total pressure across all events.
+
+21_hexbin_np_vp_<date>.png (one per event)
+  Description: Hexbin density plot of Np vs Vp. Bright hexes = common wind state.
+
+22_vp_step_histogram.png
+  Description: Step-style overlaid histograms of Vp density per event.
+  Direct visual comparison of wind speed populations.
+
+23_lag_plots_<date>.png (one per event)
+  Description: Lag-1 scatter plots for 5 variables. Diagonal organization indicates memory.
+
+24_ptot_vs_beta_<date>.png (one per event)
+  Description: Total Pressure vs Beta (log). MC regime = Beta<1 with elevated Ptot.
+
+25_dashboard_<date>.png (one per event)
+  Description: Consolidated 6-panel dashboard per event — quick visual diagnosis.
